@@ -1,7 +1,7 @@
 <?php 
 /* 
   This script assumes you are using nginx fastcgi-cache as rtCamp/EasyEngine uses
-/*
+*/
 
 function unlinkRecursive($dir, $deleteRootToo)
 {
@@ -35,7 +35,8 @@ function unlinkRecursive($dir, $deleteRootToo)
 /*
   Change your cache location here. 
   Leave false as it is so that parent cache folder will not be deleted.
-/*
+*/
+
 unlinkRecursive("/var/run/nginx-cache/", false) ;
 
 echo "Nginx cache cleaned" ;
